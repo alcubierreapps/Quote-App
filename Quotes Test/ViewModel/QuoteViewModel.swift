@@ -20,12 +20,12 @@ class QuoteModel: ObservableObject {
     func getLocalJson() -> [Quote] {
         
         // Get path in app bundle
-        let pathString = Bundle.main.path(forResource: "Data", ofType: "json")
+        let pathString = Bundle.main.path(forResource: "data", ofType: "json")
         
-        if let pathString = pathString {
+        if let path = pathString {
         
             // Create URL object
-            let url = URL(fileURLWithPath: pathString)
+            let url = URL(fileURLWithPath: path)
             
             do {
                 // Create Data object
@@ -35,7 +35,7 @@ class QuoteModel: ObservableObject {
                 let decoder = JSONDecoder()
                 var quotes = try decoder.decode([Quote].self, from: data)
                 
-                // Add UUID to author instances
+                // Add UUID to quote instances
                 for index in 0..<quotes.count {
                     quotes[index].id = UUID()
                 }
@@ -43,7 +43,7 @@ class QuoteModel: ObservableObject {
                 return quotes
             }
             catch {
-                print("error")
+                print(error)
             }
         }
         
