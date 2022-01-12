@@ -49,7 +49,7 @@ struct QuoteView: View {
 
 struct QuoteView_Previews: PreviewProvider {
     static var previews: some View {
-        QuoteView(quote: quoteData[0])
+        QuoteView(quote: Quote.testData())
             .previewLayout(.sizeThatFits)
     }
 }

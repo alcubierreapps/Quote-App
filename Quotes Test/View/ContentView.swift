@@ -10,7 +10,7 @@ import SwiftUI
 struct ContentView: View {
     //MARK: Properties
     
-    var quotes: [Quote] = quoteData
+    @ObservedObject var model = QuoteModel()
     
     var body: some View {
        
@@ -18,7 +18,7 @@ struct ContentView: View {
             
             //MARK: Quote Card
             VStack{
-                ForEach(quotes) {item in
+                ForEach(model.quotes) {item in
                     QuoteView(quote: item)
                 }
                 .padding()
@@ -30,6 +30,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView(quotes: quoteData)
+        ContentView()
     }
 }
