@@ -7,18 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C1517947278A7F9500E61753 /* Quotes_TestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1517946278A7F9500E61753 /* Quotes_TestApp.swift */; };
+		C1517947278A7F9500E61753 /* Quotes_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1517946278A7F9500E61753 /* Quotes_Test.swift */; };
 		C1517949278A7F9500E61753 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1517948278A7F9500E61753 /* ContentView.swift */; };
 		C151794B278A7F9700E61753 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C151794A278A7F9700E61753 /* Assets.xcassets */; };
 		C151794E278A7F9700E61753 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C151794D278A7F9700E61753 /* Preview Assets.xcassets */; };
+		C1517958278A80CC00E61753 /* QuoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1517957278A80CC00E61753 /* QuoteView.swift */; };
+		C151795B278A80F700E61753 /* QuoteDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C151795A278A80F700E61753 /* QuoteDetailView.swift */; };
+		C151795D278A814500E61753 /* QuoteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C151795C278A814500E61753 /* QuoteModel.swift */; };
+		C151795F278A822600E61753 /* QuoteData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C151795E278A822600E61753 /* QuoteData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C1517943278A7F9500E61753 /* Quotes Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Quotes Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C1517946278A7F9500E61753 /* Quotes_TestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quotes_TestApp.swift; sourceTree = "<group>"; };
+		C1517946278A7F9500E61753 /* Quotes_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quotes_Test.swift; sourceTree = "<group>"; };
 		C1517948278A7F9500E61753 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C151794A278A7F9700E61753 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C151794D278A7F9700E61753 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C1517957278A80CC00E61753 /* QuoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteView.swift; sourceTree = "<group>"; };
+		C151795A278A80F700E61753 /* QuoteDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteDetailView.swift; sourceTree = "<group>"; };
+		C151795C278A814500E61753 /* QuoteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteModel.swift; sourceTree = "<group>"; };
+		C151795E278A822600E61753 /* QuoteData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteData.swift; sourceTree = "<group>"; };
+		C1517960278A9BAE00E61753 /* Quotes-Test-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Quotes-Test-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +60,12 @@
 		C1517945278A7F9500E61753 /* Quotes Test */ = {
 			isa = PBXGroup;
 			children = (
-				C1517946278A7F9500E61753 /* Quotes_TestApp.swift */,
-				C1517948278A7F9500E61753 /* ContentView.swift */,
+				C1517954278A7FE300E61753 /* View */,
+				C1517955278A801300E61753 /* Model */,
+				C1517956278A802800E61753 /* Data */,
+				C1517946278A7F9500E61753 /* Quotes_Test.swift */,
 				C151794A278A7F9700E61753 /* Assets.xcassets */,
+				C1517960278A9BAE00E61753 /* Quotes-Test-Info.plist */,
 				C151794C278A7F9700E61753 /* Preview Content */,
 			);
 			path = "Quotes Test";
@@ -65,6 +77,32 @@
 				C151794D278A7F9700E61753 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C1517954278A7FE300E61753 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C1517948278A7F9500E61753 /* ContentView.swift */,
+				C1517957278A80CC00E61753 /* QuoteView.swift */,
+				C151795A278A80F700E61753 /* QuoteDetailView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C1517955278A801300E61753 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C151795C278A814500E61753 /* QuoteModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C1517956278A802800E61753 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				C151795E278A822600E61753 /* QuoteData.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +175,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C151795F278A822600E61753 /* QuoteData.swift in Sources */,
+				C151795D278A814500E61753 /* QuoteModel.swift in Sources */,
+				C151795B278A80F700E61753 /* QuoteDetailView.swift in Sources */,
 				C1517949278A7F9500E61753 /* ContentView.swift in Sources */,
-				C1517947278A7F9500E61753 /* Quotes_TestApp.swift in Sources */,
+				C1517958278A80CC00E61753 /* QuoteView.swift in Sources */,
+				C1517947278A7F9500E61753 /* Quotes_Test.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,9 +313,9 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Quotes Test/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Quotes-Test-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -299,9 +341,9 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Quotes Test/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Quotes-Test-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
